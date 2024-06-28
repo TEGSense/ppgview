@@ -1,0 +1,58 @@
+[project]
+name = "ppgview"
+version = "1.0.0"
+description = "Real-time data logger and PPG configuration for MAX30101 chips."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+keywords = ["MAX30101", "plotting", "photoplethymography", "ppg"]
+authors = [
+  {name = "Anthony Wertz", email = "awertz@pm.me" }
+]
+maintainers = [
+  {name = "Anthony Wertz", email = "awertz@pm.me" }
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+  "License :: OSI Approved :: MIT License",
+
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+  "bokeh",
+  "numpy",
+  "multiprocess",
+  "adafruit_circuitpython_ble"
+]
+
+# List additional groups of dependencies here (e.g. development
+# dependencies). Users will be able to install these using the "extras"
+# syntax, for example:
+#
+#   $ pip install sampleproject[dev]
+#
+# Similar to `dependencies` above, these must be valid existing
+# projects.
+# [project.optional-dependencies] # Optional
+# dev = ["check-manifest"]
+# test = ["coverage"]
+
+[project.urls]  # Optional
+"Homepage" = "https://github.com/anthonytw/ppgview"
+"Bug Reports" = "https://github.com/anthonytw/ppgview/issues"
+"Source" = "https://github.com/anthonytw/ppgview"
+
+[project.scripts]
+ppgview = "ppgview:main"
+
+[tool.setuptools]
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
