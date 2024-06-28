@@ -8,7 +8,7 @@ The web interface connects to the sensor over a Bluetooth Low Energy (BLE) inter
 
 ## Features
 
-These features assume the connected device supports all of these features (true for the [`tegsense-firmware`](https://github.com/TEGSense/tegsense-firmware)).
+These features assume the connected device supports all of these features (true for the [`firmware`](https://github.com/TEGSense/firmware)).
 
 - Red and infrared (IR) PPG waveform capture.
 - Device configuration options for ADC scaling, sample rate, pulse width, device averaging, and LED currents.
@@ -26,7 +26,7 @@ These features assume the connected device supports all of these features (true 
 The software was developed to interface with an application-specific research device, although it's useful for any PPG application.
 This is configured to connect to a BLE device named "TEGSense" which uses the Nordic UART Service (NUS) to telemeter PPG waveforms and sensor configuration details.
 This can actually be any BLE device (Arduino or otherwise) that's configured to telemeter the data in the expected format (specified below).
-If you have a Noridc development board handy, you can also use the firmware available in the [`tegsense-firmware`](https://github.com/TEGSense/tegsense-firmware) repository.
+If you have a Noridc development board handy, you can also use the firmware available in the [`firmware`](https://github.com/TEGSense/firmware) repository.
 It will look for any device named "TEGSense" and try to connect to the first device that matches that criteria.
 
 Future improvements:
